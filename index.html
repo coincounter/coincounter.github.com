@@ -2,3 +2,11 @@
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 var storage = window.localStorage;
 //if (!storage.getItem("pageLoadCount")) storage.setItem("pageLoadCount",0);
+//parseInt(storage.getItem("heitie"));
+//storage.setItem("credit",credit);
+
+if (storage.getItem("setup") == null){
+  var dime  = prompt("Please enter the number of dime you are holding", "");
+  storage.setItem("dime", dime);
+}
+
