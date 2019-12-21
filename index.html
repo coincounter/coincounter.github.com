@@ -5,7 +5,11 @@ var storage = window.localStorage;
 </script>
 <script>
 if (storage.getItem("setup") == null){
-  var dime  = prompt("Please enter the number of dime you are holding", "");
+  var dime  = prompt("Please enter the number of dime you are holding");
+  //if (!storage.getItem("pageLoadCount")) storage.setItem("pageLoadCount",0);
+//parseInt(storage.getItem("heitie"));
+//storage.setItem("credit",credit);
+  dime = parseInt(dime);
   storage.setItem("dime", dime);
 }
 </script>
