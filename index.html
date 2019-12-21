@@ -4,7 +4,7 @@
 var storage = window.localStorage;
 </script>
 <script>
-if (storage.getItem("dime") == null){
+if (!storage.getItem("dime")){
   var dime  = prompt("Please enter the number of dime you are holding");
   //if (!storage.getItem("pageLoadCount")) storage.setItem("pageLoadCount",0);
 //parseInt(storage.getItem("heitie"));
