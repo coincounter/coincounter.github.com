@@ -1,9 +1,10 @@
 <title>Coin Counter</title>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script>
 var storage = window.localStorage;
 
 if (storage.getItem("setup") == null){
   var dime  = prompt("Please enter the number of dime you are holding", "");
   storage.setItem("dime", dime);
 }
-
+</script>
